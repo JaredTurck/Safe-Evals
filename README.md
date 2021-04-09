@@ -1,4 +1,4 @@
-# Safe-Evals
+# Safe Evals
 `eval(input())` and `exec(input())` are dangerous as they allow the user of your program to potentially execute malicious code. This can range anything from importing dangerous modules like os then issuing commands to harm your pc, to causing your code to hang by using a lot of system resources. 
 
 ```python
