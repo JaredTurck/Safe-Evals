@@ -27,8 +27,8 @@ input: 1000000 ** 1000000
 
 ```
 
-#how to use
-executes the code `print('Hello World!')`, and returns the result.
+# How to use
+executes the code `print('Hello World!')`, and returns the result using the execute method.
 ```python
 from execute_code import execute_code
 
@@ -37,13 +37,14 @@ output = ex.execute("print('Hello World!')")
 print(output)
 ```
 
-# Testing malicious code
-Safe evals tries to minimise the threat of malicious or processor intenstive code, by checking the users input for dangerious modules, functions, and keywords before executing it. any code that takes longer then 5 seconds to compute is halted. Below are some examples of users trying to execute harmful code. lets create a loop so we can test out some examples.
 ```python
 while True:
     output = ex.execute(input('> '))
     print(output)
 ```
+
+# Testing malicious code
+Safe evals tries to minimize the threat of malicious or processor intensive code, by checking the users input for dangerous modules, functions, and keywords before executing it. any code that takes longer then 5 seconds to compute is halted. Below are some examples of users trying to execute harmful code.
 trying to import os and shutdown the computer
 ```python
 > __import__("o" + "s").system("shutdown /r")
