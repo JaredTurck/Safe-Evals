@@ -66,7 +66,7 @@ locals is not allowed!
 vars is not allowed!
 > 
 ```
-trying to cause program to hang with an running an endless while loop
+trying to cause program to hang by running an endless while loop
 ```python
 > while True: 
   print(True)
